@@ -13,6 +13,6 @@ it("should return a result with 2 decimal places", function() {
 
 it("should throw error if final calculation is NaN", function(){
   let values = {amount: "ash", years: "kalow", rate: "ue"};
-  expect(calculateMonthlyPayment(values)).toThrow(new Error("Please enter a number"));
+  expect(() => {calculateMonthlyPayment(values)}).toThrow(new Error("Please enter a number"));
 })
 /// etc
